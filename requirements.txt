@@ -2,9 +2,7 @@ streamlit
 pandas
 numpy
 matplotlib
-seaborn
-prophet
 joblib
 scikit-learn
 xgboost
-tabulate
+prophet

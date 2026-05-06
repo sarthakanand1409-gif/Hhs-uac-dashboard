@@ -267,12 +267,12 @@ with tab3:
     colC.metric("Avg forecast", f"{future_only['yhat'].mean():,.0f}" if len(future_only) else "—")
 
     with st.expander("📋 Forecast table"):
-        st.dataframe(future_only.round(1), use_container_width=True)
+        st.dataframe(future_only.round(1), width='stretch')
 
 with tab4:
     if comparison is not None:
         st.subheader("Model Comparison")
-        st.dataframe(comparison, use_container_width=True)
+        st.dataframe(comparison, width='stretch')
 
     preds_in_range = ml_preds[(ml_preds["Date"].dt.date >= start_date) & (ml_preds["Date"].dt.date <= end_date)]
     if len(preds_in_range) == 0:
@@ -310,7 +310,7 @@ with tab4:
 
 with tab5:
     st.subheader("Filtered KPI Data")
-    st.dataframe(kpi, use_container_width=True, height=400)
+    st.dataframe(kpi, width='stretch', height=400)
 
     colA, colB, colC = st.columns(3)
     colA.download_button("⬇️ Download filtered KPIs", kpi.to_csv(index=False).encode(), "filtered_kpi.csv", "text/csv")
