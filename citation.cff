@@ -1,0 +1,86 @@
+cff-version: 1.2.0
+message: "If you use this software or its outputs in your research, please cite it as below."
+title: "HHS UAC Forecasting Dashboard: Operational Analytics and Hybrid Time-Series Forecasting for the Unaccompanied Alien Children Program"
+abstract: >-
+  An end-to-end data analytics and forecasting framework for the U.S. Department
+  of Health and Human Services Unaccompanied Alien Children (UAC) Program.
+  The pipeline ingests publicly released daily counts across the CBP intake to
+  HHS discharge pipeline, computes operational KPIs (pressure index, stability
+  score, bottleneck classification, cumulative backlog), and produces 30-day
+  forecasts using two complementary approaches: Facebook Prophet for
+  interpretable seasonal decomposition and a tuned Random Forest / XGBoost
+  ensemble with GridSearchCV and TimeSeriesSplit cross-validation. The system
+  is deployed as an interactive Streamlit dashboard with filters, gauges, and
+  downloadable outputs.
+type: software
+version: 1.0.0
+date-released: 2026-05-14
+license: MIT
+repository-code: "https://github.com/sarthakanand1409-gif/Hhs-uac-dashboard"
+url: "https://github.com/sarthakanand1409-gif/Hhs-uac-dashboard"
+doi: 10.5281/zenodo.20181845
+authors:
+  - family-names: "Anand"
+    given-names: "Sarthak"
+keywords:
+  - time-series-forecasting
+  - prophet
+  - random-forest
+  - xgboost
+  - streamlit
+  - operational-analytics
+  - government-data
+  - unaccompanied-minors
+  - data-science
+  - python
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.20181845
+    description: "Concept DOI for all versions of this software"
+references:
+  - type: article
+    authors:
+      - family-names: "Taylor"
+        given-names: "Sean J."
+      - family-names: "Letham"
+        given-names: "Benjamin"
+    title: "Forecasting at scale"
+    journal: "The American Statistician"
+    volume: 72
+    issue: 1
+    year: 2018
+    start: 37
+    end: 45
+  - type: conference-paper
+    authors:
+      - family-names: "Chen"
+        given-names: "Tianqi"
+      - family-names: "Guestrin"
+        given-names: "Carlos"
+    title: "XGBoost: A Scalable Tree Boosting System"
+    collection-title: "Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining"
+    year: 2016
+    start: 785
+    end: 794
+  - type: article
+    authors:
+      - family-names: "Breiman"
+        given-names: "Leo"
+    title: "Random Forests"
+    journal: "Machine Learning"
+    volume: 45
+    issue: 1
+    year: 2001
+    start: 5
+    end: 32
+preferred-citation:
+  type: software
+  title: "HHS UAC Forecasting Dashboard"
+  authors:
+    - family-names: "Anand"
+      given-names: "Sarthak"
+      orcid: "https://orcid.org/0000-0000-0000-0000"
+  year: 2026
+  version: 1.0.0
+  doi: 10.5281/zenodo.1234
+  url: "https://github.com/sarthakanand1409-gif/Hhs-uac-dashboard"
